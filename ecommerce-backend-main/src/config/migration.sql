@@ -1,0 +1,36 @@
+CREATE TABLE Users (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Name TEXT NOT NULL,
+    UserName TEXT NOT NULL UNIQUE,
+    Email TEXT NOT NULL UNIQUE,
+    Password TEXT NOT NULL,
+    Role TEXT CHECK (Role IN ('admin', 'user')) DEFAULT 'user'
+);
+
+CREATE TABLE Books (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Title TEXT NOT NULL,
+    Author TEXT NOT NULL,
+    Description TEXT,
+    Price DECIMAL(10, 2) NOT NULL,
+    Stock INTEGER NOT NULL,
+    ImageUrl TEXT,
+    Category INTEGER,
+    FOREIGN KEY (Category) REFERENCES Categories(Id)
+);
+
+CREATE TABLE Categories (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Name TEXT NOT NULL UNIQUE
+);
+
+CREATE TABLE Purchases (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    UserId INTEGER NOT NULL,
+    BookId INTEGER NOT NULL,
+    Quantity INTEGER NOT NULL,
+    Total DECIMAL(10, 2) NOT NULL,
+    Date TEXT NOT NULL,
+    FOREIGN KEY (UserId) REFERENCES Users(Id),
+    FOREIGN KEY (BookId) REFERENCES Books(Id)
+);

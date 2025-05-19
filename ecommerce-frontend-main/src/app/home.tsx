@@ -29,14 +29,8 @@ function HomePage() {
 					{user_name !== "" ? `Bienvenido ${userName}` : "Bienvenido"}
 				</h1>
 				<p className="w-2/4 my-[5%] mx-[20%] text-xl">
-					Explora un universo de historias, conocimiento e inspiración
-					en nuestra tienda en línea. Ofrecemos una cuidadosa
-					selección de libros para todos los gustos: desde fascinantes
-					novelas y clásicos inmortales, hasta guías prácticas y las
-					últimas tendencias literarias. Nuestro compromiso es
-					acercarte el placer de la lectura con comodidad, precios
-					justos y un servicio excepcional. ¡Descubre tu próxima gran
-					lectura hoy mismo!
+					Bienvenido a nuestra biblioteca digital, donde cada libro es una puerta a nuevos mundos. Explora entre clásicos atemporales, novelas que capturarán tu imaginación, 
+					ensayos reveladores y guías prácticas para enriquecer tu día a día.
 				</p>
 			</article>
 		</Layout>

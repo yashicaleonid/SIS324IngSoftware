@@ -35,14 +35,14 @@ const CustomCartBook: React.FC<CustomCartBookProps> = ({
 						onLoad={() => setIsLoad(false)}
 					></img>
 				</div>
-				<h2 className="pt-4 font-semibold">{titulo}</h2>
+				<h2 className="pt-4 font-semibold text-black">{titulo}</h2>
 			</div>
-			<div className=" w-full flex flex-col items-center">
-				<p className="mb-2 w- text-base text-center bg-slate-400 p-1 px-2 rounded-full">{categoria}</p>
-				<span>{author}</span>
-				<span className="text-xs">Bs. {Price}</span>
+			<div className="w-full flex flex-col items-center">
+				<p className="mb-2 text-base text-center bg-slate-400 p-1 px-2 rounded-full text-black">{categoria}</p>
+				<span className="text-gray-800">{author}</span>
+				<span className="text-xs text-gray-800">Bs. {Price}</span>
 				<span
-					className="w-full text-left text-blue-600 hover:text-blue-800 hover:cursor-pointer"
+					className="w-full text-left text-blue-600 hover:text-blue-600 hover:cursor-pointer"
 					onClick={Information}
 				>
 					ver más

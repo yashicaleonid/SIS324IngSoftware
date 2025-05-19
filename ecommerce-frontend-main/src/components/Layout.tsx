@@ -35,12 +35,12 @@ const Layout = ({ children }: { children: ReactNode }) => {
 
 	return (
 		<div className="bg-custom-gradient min-h-screen w-full h-auto flex flex-col justify-between">
-			<header className="w-full h-1/5 bg-marron">
+			<header className="w-full h-1/5 bg-ladrillo-oscuro">
 				<div className="pt-2 h-[60%] flex justify-center">
 					<Image
 						src="/webp/logo.webp"
-						width={100}
-						height={100}
+						width={70}
+						height={60}
 						alt="logo"
 					/>
 				</div>
@@ -88,7 +88,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
 							</button>
 						) : (
 							<button
-								className="bg-red-500 text-black px-4 py-3 rounded-xl hover:bg-red-700 text-base font-black hover:text-white"
+								className="bg-red-600 text-black px-4 py-3 rounded-xl hover:bg-red-700 text-base font-black hover:text-white"
 								onClick={() => {
 									Cookies.remove("token");
 									localStorage.clear();
@@ -106,14 +106,14 @@ const Layout = ({ children }: { children: ReactNode }) => {
 			<main className="h-auto w-full flex justify-center items-start">
 				{children}
 			</main>
-			<footer className="bg-marron text-white px-[10%] py-5 h-1/3 flex flex-col items-center justify-center">
+			<footer className="bg-ladrillo-oscuro text-white px-[10%] py-5 h-1/3 flex flex-col items-center justify-center">
 				<div className="flex items-center justify-between w-full mb-5">
 					<FooterSection title="Contantanos">
 						<p className="text-base mx-1 my-0 text-white">
-							📍 Dirección: Calle Ficticia #123, Ciudad
+							📍 Dirección: Calle  #123, Ciudad
 						</p>
 						<p className="text-base mx-1 my-0 text-white">
-							📞 Teléfono: +52 55 1234 5678
+							📞 Teléfono: +591 12345678
 						</p>
 						<p className="text-base mx-1 my-0 text-white">
 							📧 Email: contacto@tu-tienda.com
@@ -210,7 +210,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
 				</div>
 				<div className="text-center text-sm border-t-[1px] border-t-black p-3 w-full">
 					<p>
-						© 2024 Tu Tienda de Libros. Todos los derechos
+						© 2025 Tu tienda de libros. Derechos
 						reservados.
 					</p>
 				</div>

@@ -60,10 +60,10 @@ const ShopingCart = () => {
 				<div className="flex flex-row justify-between">
 					<div className="flex flex-row justify-center items-center h-max w-max">
 						<CarritoIcon className="w-12 h-12" />
-						<p className="text-3xl font-bold pl-2">Mi Carrito</p>
+						<p className="text-3xl text-black font-bold pl-2">Mi Carrito</p>
 					</div>
 				</div>
-				<div className="flex flex-col p-3 text-white bg-blue-700 rounded-3xl my-3">
+				<div className="flex flex-col p-3 text-black bg-yellow-100 rounded-3xl my-2  border-2 border-solid border-black">
 					<div className="text-xl font-semibold justify-items-center grid grid-cols-[.5fr,3fr,1fr,1fr]">
 						<p>Cantidad</p>
 						<p>Articulo</p>
@@ -88,14 +88,14 @@ const ShopingCart = () => {
 						className={`${
 							cart.length === 0
 								? "bg-gray-400 cursor-not-allowed"
-								: "bg-[yellow] hover:bg-[rgb(255,255,0,0.5)]"
+								: "bg-green-700 hover:bg-[rgb(255,255,0,0.5)]"
 						} font-bold border-none py-3 px-5 rounded-lg cursor-pointer`}
 						onClick={() => {
 							handleBuyAll();
 							window.location.href = "/payment";
 						}}
 					>
-						Comprar todo Bs.
+						Comprar todo en Bs.
 					</button>
 				</div>
 			</div>

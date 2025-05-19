@@ -60,12 +60,12 @@ const BookDetails: React.FC<BookDetails> = ({
 					</div>
 				</div>
 				<div className="ml-6 w-full h-full flex flex-col">
-					<h1 className="font-extrabold text-6xl">{Title}</h1>
-					<p className="font-medium text-xl">{Author}</p>
-					<p className="mt-3">{Description}</p>
-					<p>Categoria: {Category}</p>
+					<h1 className="font-extrabold text-6xl text-black">{Title}</h1>
+					<p className="font-medium text-xl text-black">{Author}</p>
+					<p className="mt-3 text-black">{Description}</p>
+					<p className="text-black">Categoria: {Category}</p>
 					<br />
-					<p className="text-2xl">Bs. {Price}</p>
+					<p className="text-2xl text-black">Bs. {Price}</p>
 					<div className="w-full h-full">
 						{isLoggedIn ? (
 							<CustomButton
